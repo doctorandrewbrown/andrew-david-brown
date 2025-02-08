@@ -1,0 +1,24 @@
+/* Styles */
+ body {color: white;}
+
+main a {
+    text-decoration: none; 
+    color: rgba(255, 255, 255, 0.615);
+}
+
+a:hover{
+    color: rgba(255, 255, 255, 0.963);
+}
+
+h1{
+    color: rgb(255, 0, 81);
+    font-size: x-large;
+}
+
+ul {list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+code{color: rgb(255, 0, 81);}
+
+pre{margin: 4rem;}

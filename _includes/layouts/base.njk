@@ -1,0 +1,10 @@
+{% include "_includes/head.njk" %}
+{% include "_includes/header.njk" %}
+<main class="container">
+    {# either render content of .md ie posts files if needed #}
+    {{ content | safe }}
+    {# or include html for regular pages (not both) #}
+    {%- block main -%}{%- endblock -%}
+</main>
+{% include "_includes/footer.njk" %}
+
