@@ -29,7 +29,7 @@ collections:
           preview: true
     files:
       - file: "about.md"
-        label: "Home Page"
+        label: "About Page"
         name: "home"
         fields:
           - {label: Title, name: title, widget: string}
