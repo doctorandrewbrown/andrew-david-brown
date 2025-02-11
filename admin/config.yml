@@ -26,7 +26,7 @@ collections:
   - name: "pages"
     label: "Pages"
     files:
-      - file: "about.njk"
+      - file: "about.md"
         label: "Home Page"
         name: "home"
         fields:
