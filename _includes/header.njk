@@ -21,7 +21,9 @@
         <hr class="text-white py-1">
         <div class="text-center container">
           <h1><em>{{ title }}</em></h1>
-          <p>{{page.date}}</p>
+          {# include post date for single pages only and not home page blog list #}
+          {% if page.url!= "/" %}
+          <p>{{ page.date | postDate }}</p>
+          {% endif %}
         </div>
-        
       </header>
