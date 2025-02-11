@@ -1,0 +1,25 @@
+backend:
+  # Use netlify identity as backend
+  name: git-gateway
+  branch: main
+  ### enable below lines for github integration ###
+  name: github
+  repo: https://github.com/doctorandrewbrown/andrew-david-brown
+#media_folder: "src/static/img"
+#public_folder: "/static/img"
+
+# Please run "npx netlify-cms-proxy-server" for local backend
+local_backend: true
+# publish_mode: editorial_workflow
+collections:
+  - label: "Blog"
+    name: "blog"
+    folder: "blog"
+    create: true
+    editor:
+      preview: false
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Tags", name: "tags", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Body", name: "body", widget: "markdown" }
