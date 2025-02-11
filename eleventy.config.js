@@ -16,6 +16,9 @@ module.exports = function (eleventyConfig) {
 	eleventyConfig.addPassthroughCopy("css");
 	eleventyConfig.addPassthroughCopy("scripts");
 
+	// copy decap cms files 
+	eleventyConfig.addPassthroughCopy("admin");
+
 	// keep footer date current
 	eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`);
 
