@@ -17,7 +17,7 @@ collections:
     folder: "blog"
     create: true
     editor:
-      preview: false
+      preview: true
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Tags", name: "tags", widget: "string" }
@@ -25,6 +25,8 @@ collections:
       - { label: "Body", name: "body", widget: "markdown" }
   - name: "pages"
     label: "Pages"
+    editor:
+          preview: true
     files:
       - file: "about.md"
         label: "Home Page"
