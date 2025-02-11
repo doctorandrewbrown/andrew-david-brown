@@ -1,5 +1,5 @@
 ---
-title: Eleventy .gitignore file
+title: Eleventy .gitignore File
 tags: eleventy
 date: 2025-02-04
 ---
