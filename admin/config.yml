@@ -1,16 +1,18 @@
-backend:
+## Using netlify deployed cms ##
+#backend:
   # Use netlify identity as backend
-  name: git-gateway
-  branch: main
-  ### enable below lines for github integration ###
-  # name: github
-  # repo: https://github.com/doctorandrewbrown/andrew-david-brown
+  #name: git-gateway
+  #branch: main
 media_folder: "img"
 public_folder: "img"
 
-# Please run "npx netlify-cms-proxy-server" for local backend
-#local_backend: true
 # publish_mode: editorial_workflow
+
+## Using local cms ##
+local_backend: true
+backend:
+  name: git-gateway
+
 collections:
   - label: "Blog"
     name: "blog"
@@ -30,6 +32,7 @@ collections:
     files:
       - file: "about.md"
         label: "About Page"
-        name: "home"
+        name: "about"
         fields:
           - {label: Title, name: title, widget: string}
+          - { label: "Body", name: "body", widget: "markdown" }
