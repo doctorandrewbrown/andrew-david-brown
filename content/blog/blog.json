@@ -1,5 +1,5 @@
 { 
-   "layout": "../_includes/layouts/base.njk",
+   "layout": "layouts/base.njk",
    "tags":  "posts",
    "relative_path": "../..",
    "tab-title": "post",

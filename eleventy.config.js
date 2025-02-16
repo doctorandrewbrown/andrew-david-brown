@@ -6,9 +6,9 @@ const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const { DateTime } = require("luxon");
 
 module.exports = function (eleventyConfig) {
-	// Input directory: src
+	// Input directory: src;
 	// Output directory: _site
-
+	
 	// Prism highlighter
     eleventyConfig.addPlugin(syntaxHighlight);
 
@@ -16,7 +16,7 @@ module.exports = function (eleventyConfig) {
 	eleventyConfig.addPassthroughCopy("css");
 	eleventyConfig.addPassthroughCopy("scripts");
 
-	// copy decap cms files 
+	// copy decap cms files to _site dir
 	eleventyConfig.addPassthroughCopy("admin");
 
 	// keep footer date current
@@ -26,4 +26,12 @@ module.exports = function (eleventyConfig) {
 	eleventyConfig.addFilter("postDate", (dateObj) => {
 		return DateTime.fromJSDate(dateObj).toLocaleString(DateTime.DATE_MED);
 	  });
+	
 };
+// Define input and output directories
+module.exports.config = {
+	dir: {
+	  input: "content",
+	  //output: "_site"
+	}
+  };

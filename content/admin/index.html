@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+        <title>Content Manager</title>
+    </head>
+    <body>
+        <!-- Include the script that builds the page and powers Decap CMS -->
+        <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
+        <!-- Netlify Identity Widget -->
+        <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+        <!-- register style sheet in current folder for styling cms preview -->
+        <script>
+            CMS.registerPreviewStyle("style.css");
+        </script>
+        <!-- Define html structure and data for cms post preview -->
+        <script>
+            // Post preview setup
+            var PostPreview = createClass({
+              render: function() {
+                var entry = this.props.entry;
+                //var image = entry.getIn(['data', 'image']);
+                //var bg = this.props.getAsset(image);
+                // Create html structure with data for cms post preview
+                return h('article', {},
+                  h('h1', {}, entry.getIn(['data', 'title'])),
+                  h('h2', {}, entry.getIn(['data', 'date'])),
+                  h('h3', {}, entry.getIn(['data', 'tags'])),
+                  h('div', {"className": "text"}, this.props.widgetFor('body'))
+                );
+              }
+            });
+            CMS.registerPreviewTemplate("blog", PostPreview);
+            
+            // About page preview setup
+            var PagePreview = createClass({
+                render: function() {
+                  var entry = this.props.entry;
+                  // Create html structure with data for cms post preview
+                  return h('article', {},
+                    h('h1', {}, entry.getIn(['data', 'title'])),
+                    h('h2', {"className": "page-subtitle"}, entry.getIn(['data', 'subtitle'])),
+                    h('p', {}, entry.getIn(['data', 'blurb'])),
+                  );
+                }
+              });
+            CMS.registerPreviewTemplate("about", PagePreview);
+          </script>
+    </body>
+</html>

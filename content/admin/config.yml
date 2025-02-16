@@ -30,9 +30,12 @@ collections:
     editor:
           preview: true
     files:
-      - file: "about.md"
+      - file: "content/about.md"
         label: "About Page"
         name: "about"
         fields:
-          - {label: Title, name: title, widget: string}
+          - {label: Title, name: title, widget: "string"}
+          - {label: Blurb, name: blurb, widget: "string"}
+          - { label: "Subtitle", name: "subtitle", widget: "string" }
+          - { label: "Description", name: "description", widget: "string" }
           - { label: "Body", name: "body", widget: "markdown" }
