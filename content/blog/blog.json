@@ -1,7 +1,7 @@
 { 
-   "layout": "layouts/base.njk",
+   "layout": "layouts/single.njk",
    "tags":  "posts",
-   "relative_path": "../..",
+   "relative_path": "../../", 
    "tab-title": "post",
    "title": "Post"
 
