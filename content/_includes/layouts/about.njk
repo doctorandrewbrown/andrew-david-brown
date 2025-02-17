@@ -1,7 +1,9 @@
 ---
 title: Test
+# for path to static/css directory in _src directory
+relative_path: ../
 ---
-{% extends "layouts/base.njk" %}
+{% extends "./base.njk" %}
 {%- block main -%}
 <h2>{{subtitle}}</h2>
 <p>{{blurb}}</p>

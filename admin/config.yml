@@ -30,8 +30,8 @@ collections:
     editor:
           preview: true
     files:
-      - file: "test.md"
-        label: "Test Page"
+      - file: "content/about.md"
+        label: "About Page"
         name: "about"
         fields:
           - {label: Title, name: title, widget: "string"}

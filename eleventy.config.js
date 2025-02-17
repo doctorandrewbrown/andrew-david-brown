@@ -12,9 +12,9 @@ module.exports = function (eleventyConfig) {
 	// Prism highlighter
     eleventyConfig.addPlugin(syntaxHighlight);
 
-	// copy css and scripts directories to _site dir
-	eleventyConfig.addPassthroughCopy("css");
-	eleventyConfig.addPassthroughCopy("scripts");
+	// copy static directories to _site dir
+	eleventyConfig.addPassthroughCopy("static");
+	//eleventyConfig.addPassthroughCopy("scripts");
 
 	// copy decap cms files to _site dir
 	eleventyConfig.addPassthroughCopy("admin");
