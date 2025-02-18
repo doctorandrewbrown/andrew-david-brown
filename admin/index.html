@@ -33,6 +33,22 @@
               }
             });
             CMS.registerPreviewTemplate("blog", PostPreview);
+
+            // Define html structure and data for cms project preview
+            var ProjectPreview = createClass({
+              render: function() {
+                var entry = this.props.entry;
+                //var image = entry.getIn(['data', 'image']);
+                //var bg = this.props.getAsset(image);
+                // Create html structure with data for cms post preview
+                return h('article', {},
+                  h('h1', {}, entry.getIn(['data', 'title'])),
+                  h('h2', {}, entry.getIn(['data', 'tech'])),
+                  h('div', {"className": "text"}, this.props.widgetFor('body'))
+                );
+              }
+            });
+            CMS.registerPreviewTemplate("project", ProjectPreview);
             
             // About page preview setup
             var PagePreview = createClass({

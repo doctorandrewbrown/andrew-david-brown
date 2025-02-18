@@ -1,0 +1,8 @@
+{ 
+   "layout": "layouts/single.html",
+   "tags":  "projects",
+   "relative_path": "../../", 
+   "tab_title": "projects",
+   "title": "Projects"
+
+}
