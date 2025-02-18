@@ -28,10 +28,11 @@ module.exports = function (eleventyConfig) {
 	  });
 	
 };
-// Define input and output directories
+// Define input and output directories, and template engine
 module.exports.config = {
 	dir: {
 	  input: "content",
 	  //output: "_site"
-	}
-  };
+	},
+	htmlTemplateEngine: "njk",
+};

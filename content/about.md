@@ -1,7 +1,7 @@
 ---
-title: Content About Page
+title: About Page
 subtitle: Lorem subtitle
 blurb: Good stuff 
 description: This is the about description.
-layout: layouts/about.njk
+layout: layouts/about.html
 ---

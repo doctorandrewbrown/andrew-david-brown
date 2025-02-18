@@ -38,7 +38,7 @@
             var PagePreview = createClass({
                 render: function() {
                   var entry = this.props.entry;
-                  // Create html structure with data for cms post preview
+                  // Create html structure with data for cms About page preview
                   return h('article', {},
                     h('h1', {}, entry.getIn(['data', 'title'])),
                     h('h2', {"className": "page-subtitle"}, entry.getIn(['data', 'subtitle'])),

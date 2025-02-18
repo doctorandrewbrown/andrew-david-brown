@@ -1,5 +1,5 @@
 { 
-   "layout": "layouts/single.njk",
+   "layout": "layouts/single.html",
    "tags":  "posts",
    "relative_path": "../../", 
    "tab_title": "post",
