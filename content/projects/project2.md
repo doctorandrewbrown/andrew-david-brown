@@ -1,6 +1,7 @@
 ---
 title: Project 2
-tech: HTML
+tech: HTML5
 ---
 # Project 2
-HTML project
+
+HTML5 project

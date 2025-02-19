@@ -1,5 +1,5 @@
 ---
-title: CSS Project
-tech: CSS
+title: CSS3 Project
+tech: CSS3
 ---
 A css3 project
