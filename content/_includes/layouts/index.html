@@ -22,8 +22,8 @@ relative_path: ./
 <section class="row mt-3" id="project-list-section">
     {% for project in collections.projects %}
     <div class="col-sm-6 col-lg-4 col-xl-3 col-xxl-2">
-      <div class="card border border-primary text-center mb-3 pt-2">
-            <a href="#"><img class="card-img-top" src="{{ relative_path }}static/img/test.png"
+      <div class="card bg-dark p-3 border border-light text-light text-center mb-3 pt-2">
+            <a href="#"><img class="card-img-top" src="{{ relative_path }}static/img/code-image.png"
             alt="pictures of" ></a>
         <div class="card-body">
           <p class="card-text">{{project.data.title}}</p>
