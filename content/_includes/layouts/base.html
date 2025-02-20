@@ -15,7 +15,10 @@
   <title>{{ tab_title }}</title>
 </head>
 <body class="bg-dark">
+    <!--start of outer container covering full screen height via min-vh-100-->
     <div class="container d-flex flex-column justify-content-between min-vh-100 bg-dark">
+      <!--start of inner container -->
+      <div>
       <header>
         <hr class="text-white">
         <nav class="navbar navbar-dark navbar-expand-lg bg-dark">
@@ -35,21 +38,23 @@
           </div>
         </nav>
         <hr class="text-white py-1">
-        <div class="text-center container">
+        <div class="text-center container my-3">
           <h1><em>{{ title }}</em></h1>
           {% if page.url != "/" %}
           <p>{{ page.date | postDate }}</p>
           {% endif %}
         </div>
       </header>
-      <main class="container">
+      <main>
         {%- block main -%}{%- endblock -%}
       </main>
+      </div><!--end of inner container -->
+      <!--footer is pushed down to base of page and any space-between is here-->
       <footer class="text-center mt-auto">
         <hr class="text-white">
         <p class="text-white"><em><small>&copy; {% year %} Andrew Brown</small></em></p>
     </footer>
-    </div>
+    </div><!--end of outer container -->
     <script>
       if (window.netlifyIdentity) {
         window.netlifyIdentity.on("init", (user) => {
