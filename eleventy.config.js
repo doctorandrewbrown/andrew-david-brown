@@ -32,7 +32,7 @@ module.exports = function (eleventyConfig) {
 module.exports.config = {
 	dir: {
 	  input: "content",
-	  //output: "_site"
+	  output: "_site"
 	},
 	htmlTemplateEngine: "njk",
 };
