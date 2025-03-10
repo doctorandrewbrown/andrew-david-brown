@@ -1,17 +1,17 @@
 ## Using netlify deployed cms ##
-backend:
+#backend:
   # Use netlify identity as backend
-  name: git-gateway
-  branch: main
+  #name: git-gateway
+  #branch: main
 media_folder: "img"
 public_folder: "img"
 
 # publish_mode: editorial_workflow
 
 ## Using local cms ##
-#local_backend: true
-#backend:
-  #name: git-gateway
+local_backend: true
+backend:
+  name: git-gateway
 
 collections:
   - label: "Blog"
