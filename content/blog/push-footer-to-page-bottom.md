@@ -5,7 +5,7 @@ date: 2025-02-21
 ---
 This is a useful trick when the content of a page is short and the footer is left hovering mid page. This could happen where the homepage of a new blog/portfolio which lists posts and projects, does not have much content yet. In this case we want the footer to be pushed down like  in the picture below. Bootstrap classes are used here, so bootstrap needs to be loaded in the head as usual.
 
-![push footer to bottom of page](../../static/img/push-footer-to-page-bottom.png)
+<img src="../../static/img/post-bs-footer-trick-min.webp" class="img-fluid py-3" alt="page layout with footer pushed down">
 
  In the code snippet below, the first ```<div>``` is a container for all the page content i.e. the ```<header>```, ```<main>``` and ```<footer>``` sections (blue border in the picture). The second ```<div>``` (white border) , nested within the first, contains the page content (header and main sections) excluding the ```<footer>``` element. 
 
