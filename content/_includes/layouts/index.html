@@ -26,7 +26,7 @@ relative_path: ./
     {% for project in collections.projects %}
     <div class="col-md-4 col-xl-3">
       <div class="card bg-dark p-3 border border-light text-light text-center mb-3">
-            <a href="#"><img  class="card-img-top" src="{{ relative_path }}static/img/{{ project.data.image }}"
+            <a href="{{ project.data.link }}"><img  class="card-img-top" src="{{ relative_path }}static/img/{{ project.data.image }}"
             alt="picture of laptop" ></a>
         <div class="card-body">
           <p class="card-text">{{project.data.title}}</p>
